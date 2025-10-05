@@ -1,0 +1,32 @@
+.app {
+    &-logo {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        z-index: 2;
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        display: none;
+
+        &-text {
+            font-family: "Anybody", sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            background: linear-gradient(45deg, #ff6f6f, #e46dff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 90%;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .app {
+        &-logo {
+            display: flex;
+        }
+    }
+}

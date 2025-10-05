@@ -1,0 +1,34 @@
+{
+    "navigations": [
+        {
+            "id": 1,
+            "text_tab": "Why us?",
+            "href_tab": "/whyus"
+        },
+        {
+            "id": 2,
+            "text_tab": "Price Plan",
+            "href_tab": "/prices"
+        },
+        {
+            "id": 3,
+            "text_tab": "About us",
+            "href_tab": "/about"
+        },
+        {
+            "id": 4,
+            "text_tab": "Reviews Us",
+            "href_tab": "/reviews"
+        },
+        {
+            "id": 5,
+            "text_tab": "Questions",
+            "href_tab": "/questions"
+        },
+        {
+            "id": 6,
+            "text_tab": "Contacts us",
+            "href_tab": "/contacts"
+        }
+    ]
+}

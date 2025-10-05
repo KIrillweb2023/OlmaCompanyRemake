@@ -1,0 +1,326 @@
+.app {
+    &-header {
+        position: absolute;
+        width: 100%;
+        height: 65px;
+        padding: 0px 85px;
+        z-index: 5;
+
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+
+        border-bottom: 1px solid rgba(224, 224, 224, 0.226);
+
+        &-close {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 40px;
+            height: 40px;
+            display: none;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+
+        &-logo {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            &__text {
+                color: #fff;
+                font-weight: 500;
+            }
+        }
+
+        &-nav {
+            height: 100%;
+
+            &__title {
+                font-size: 22px;
+                color: #fff;
+                display: none;
+            }
+        }
+
+        &-list {
+            display: flex;
+            column-gap: 20px;
+            height: 100%;
+
+
+            &__item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 20px;
+                height: 100%;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #ff80d941;
+
+                    a {
+                        color: #FF80D9;
+                    }
+                }
+
+                &_link {
+                    color: #fff;
+                    font-size: 18px;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }
+
+
+
+        &-auth {
+            background-color: #ff42c652;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            padding: 10px 20px;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #ff42c6b0;
+            }
+
+            &__text {
+                color: #fff;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .app {
+        &-header {
+            padding: 0 25px;
+
+            &-list {
+                column-gap: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .app {
+        &-header {
+            left: -35%;
+            opacity: 0;
+            visibility: hidden;
+            height: 100vh;
+            width: 35%;
+            padding: 25px 20px;
+            background: rgba(0, 0, 0, 1);
+            transition: 0.3s ease-in-out;
+
+            &.active-menu {
+                left: 0%;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &-close {
+                display: block;
+            }
+
+            &-logo {
+                &__text {
+                    font-size: 16px;
+                }
+            }
+
+            &-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            &-nav {
+                height: auto;
+
+                &__title {
+                    display: block;
+                }
+            }
+
+            &-list {
+                flex-direction: column;
+                align-items: flex-start;
+                row-gap: 25px;
+                padding-left: 40px;
+                margin-top: 30px;
+                height: auto;
+
+                &__item {
+                    padding: 0;
+                    position: relative;
+                    height: auto;
+
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 8px;
+                        height: 8px;
+                        background: #ffffff00;
+                        border-radius: 100%;
+                        border: 1px solid #fff;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        background: #ffffff00;
+
+                        &::before {
+                            background: #FF80D9;
+                            border: 1px solid #FF80D9;
+                        }
+                    }
+
+                    &_link {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &-auth {
+                // margin-top: 100px;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .app {
+        &-header {
+            width: 40%;
+
+            &-nav {
+                &__title {
+                    font-size: 20px;
+                }
+            }
+
+            &-list {
+                &__item {
+                    &_link {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .app {
+        &-header {
+            width: 50%;
+
+            &-close {
+                top: 16px;
+                right: 12px;
+            }
+
+            &-logo {
+                &__icon {
+                    width: 20px;
+                }
+
+                &__text {
+                    font-size: 14px;
+                }
+            }
+
+            &-nav {
+                &__title {
+                    font-size: 18px;
+                }
+            }
+
+            &-list {
+                &__item {
+                    &_link {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 567px) {
+    .app {
+        &-header {
+            width: 55%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .app {
+        &-header {
+            padding: 17px 20px;
+            width: 80%;
+
+            &-close {
+                top: 8px;
+            }
+
+            &-nav {
+                &__title {
+                    font-size: 18px;
+                }
+            }
+
+            &-list {
+                &__item {
+                    &_link {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .app {
+        &-header {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .app {
+        &-header {
+            width: 100%;
+        }
+    }
+}
