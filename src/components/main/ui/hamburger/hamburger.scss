@@ -6,3 +6,15 @@
         display: none;
     }
 }
+
+
+@media (max-width: 425px) {
+    .app {
+        &-hamburger {
+            width: 20px;
+            height: 20px;
+            right: 15px;
+
+        }
+    }
+}

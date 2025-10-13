@@ -15,7 +15,7 @@ export default function Navigation() {
 
     const FetchNavigationLinks = async () => {
         try {
-            const { data } = await axios.get("http://localhost:8000/navigations");
+            const { data } = await axios.get("https://44c2efca248cf462.mokky.dev/navigation-panel");
             setLinks(data)
         } catch (err) {
             console.log(err)

@@ -27,6 +27,24 @@
     .app {
         &-logo {
             display: flex;
+            z-index: 2;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .app {
+        &-logo {
+            left: 15px;
+
+            &-icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            &-text {
+                font-size: 18px;
+            }
         }
     }
 }

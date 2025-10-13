@@ -34,11 +34,11 @@ export function Main({ onToggle }: { onToggle: () => void }) {
                     <h2 className="app-main-title">Olma a startup company focused on creating online-products</h2>
                     <p className="app-main-descr">We create high-quality web products for your business and focus on high-quality web products, focusing on speed, security, and ease of management for you</p>
                     <div className="app-main-buttons">
-                        <button className="app-main-buttons-btn app-main-buttons-btn__submit">
-                            <p>Submit your application</p>
-                            <Image src="/icons/mainarrowbtn.svg" width={30} height={30} alt="noname" />
+                        <button className="app-main-buttons__btn app-main-buttons__btn_submit">
+                            <p className="app-main-buttons__btn_text">Submit your application</p>
+                            <Image className="app-main-buttons__btn_img" src="/icons/mainarrowbtn.svg" width={30} height={30} alt="noname" />
                         </button>
-                        <button className="app-main-buttons-btn app-main-buttons-btn__consult">To consult</button>
+                        <button className="app-main-buttons__btn app-main-buttons__btn_consult">To consult</button>
                     </div>
                 </div>
             </div>

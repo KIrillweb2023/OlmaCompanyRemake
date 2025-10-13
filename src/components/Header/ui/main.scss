@@ -125,10 +125,10 @@
 @media (max-width: 1200px) {
     .app {
         &-header {
-            left: -35%;
+            left: -100%;
             opacity: 0;
             visibility: hidden;
-            height: 100vh;
+            height: 100dvh;
             width: 35%;
             padding: 25px 20px;
             background: rgba(0, 0, 0, 1);

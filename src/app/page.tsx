@@ -1,7 +1,9 @@
 "use client"
 
+import { Consult } from "@/components/Consult";
 import { Header } from "@/components/Header";
 import { Main } from "@/components/main";
+import { Why } from "@/components/Why";
 import { useState } from "react";
 
 export default function Home() {
@@ -13,6 +15,8 @@ export default function Home() {
     <>
       <Header onToogle={onToogleMenu} isMenu={isMenu} />
       <Main onToggle={onToogleMenu} />
+      <Why />
+      <Consult />
     </>
   );
 }
