@@ -1,0 +1,204 @@
+.footer {
+    height: auto;
+    padding: 70px 0 30px;
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 23%;
+        min-width: 250px;
+
+        &-company {
+            font-size: 24px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        &-subtitle {
+            font-size: 16px;
+            color: #d2cbcb;
+            line-height: 1.4;
+        }
+
+        &-line {
+            width: 150px;
+            height: 3px;
+            border-radius: 10px;
+            background-color: #1463FD;
+            margin: 15px 0;
+        }
+
+        &-list {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        &-content {
+            display: flex;
+            align-items: center;
+        }
+
+        &-li {
+            padding: 10px;
+            background: #fff;
+            border-radius: 50px;
+            overflow: hidden;
+            width: 60px;
+            transition: 0.4s ease-in-out;
+            cursor: pointer;
+
+            &-hidden {
+                padding-left: 10px;
+            }
+
+            &:hover {
+                width: 154px;
+                box-shadow: 0 4px 12px rgba(20, 99, 253, 0.3);
+            }
+        }
+
+        &-block {
+            border-radius: 100%;
+            background-color: #1463FD;
+            display: flex;
+            width: 40px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        &-icon {
+            height: 20px;
+            width: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        &_title {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        &_requsites {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            color: #fff;
+            gap: 8px;
+        }
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &-link {
+                font-size: 16px;
+                color: #fff;
+                font-weight: 400;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #1463FD;
+                }
+            }
+        }
+
+        &_subtitle {
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        &_descr {
+            font-size: 14px;
+            color: #c4c4c4;
+            line-height: 1.4;
+            margin-top: 10px;
+
+            a {
+                color: #c4c4c4;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #1463FD;
+                }
+            }
+        }
+    }
+
+    &__subinfo {
+        width: 100%;
+        margin-top: 70px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 30px;
+
+        &-text {
+            color: #d2cbcb5e;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            font-weight: 300;
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 1200px) {
+    .footer {
+        &-wrapper {
+            gap: 30px;
+        }
+
+        &-item {
+            width: 48%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 0 20px;
+
+        &-wrapper {
+            flex-direction: column;
+        }
+
+        &-item {
+            width: 100%;
+        }
+
+        &__subinfo {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 30px 0 15px;
+
+        .container {
+            width: 90%;
+        }
+    }
+}

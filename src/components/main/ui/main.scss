@@ -372,12 +372,14 @@
 
 @media (max-width: 1200px) {
     .app {
-        .container {
-            width: 75%;
-        }
+
 
 
         &-main {
+            .container {
+                width: 75%;
+            }
+
             &-tab {
                 column-gap: 10px;
                 padding: 5px 10px;
@@ -440,12 +442,14 @@
 
 @media (max-width: 1024px) {
     .app {
-        .container {
-            width: 90%;
-        }
+
 
         &-main {
             background-position: right;
+
+            .container {
+                width: 90%;
+            }
 
             &-title {
                 margin-top: 30px;
@@ -479,13 +483,15 @@
 
 @media (max-width: 768px) {
     .app {
-        .container {
-            width: 100%;
-            padding: 0 10px;
-        }
+
 
         &-main {
             background-position: 85%;
+
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
 
             &-title {
                 font-size: 26px;

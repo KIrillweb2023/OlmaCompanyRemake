@@ -1,0 +1,45 @@
+.app {
+    &-price {
+        padding: 100px 0;
+
+        &-title {
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 3px 5px 0px #5C1A48;
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 140%;
+            position: relative;
+        }
+
+        .container {
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .app {
+        &-price {
+            &-title {
+                font-size: 34px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .app {
+        &-price {
+            padding: 40px 0;
+
+            &-title {
+                font-size: 26px;
+            }
+        }
+    }
+}

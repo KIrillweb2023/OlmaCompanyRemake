@@ -1,0 +1,277 @@
+.app {
+    &-price {
+        &-wrapper {
+            margin-top: 30px;
+        }
+
+        &-slider {
+            // height: auto;
+            // min-height: 500px;
+        }
+
+        &-item {
+            background: #221925;
+            border-radius: 20px;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            transition: all 0.3s ease;
+            position: relative;
+            margin: 10px 0;
+            transform: translateY(0px);
+            border: 1px solid #6a4c7a00;
+
+            &:hover {
+                transform: translateY(-10px);
+                border: 1px solid #6A4C7A;
+                z-index: 10;
+            }
+
+            &__header {
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+
+                &_icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #ECEBFF;
+                    border-radius: 15px;
+                    padding: 15px;
+
+                    img {
+                        width: 40px;
+                    }
+                }
+
+                &_info {
+                    &-title {
+                        color: #9A9A9A;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+
+                    &-subtitle {
+                        color: #ffffff;
+                        font-size: 22px;
+                        font-weight: 500;
+                        line-height: 130%;
+                    }
+                }
+            }
+
+            &__description {
+                color: #9e9e9e;
+                font-size: 20px;
+                margin-top: 30px;
+                font-weight: 300;
+            }
+
+            &__count {
+                color: #fff;
+                font-size: 30px;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+            &__include {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 40px;
+            }
+
+            &__features {
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+                margin-top: 20px;
+            }
+
+            &__feature_li {
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+
+                &-icon {
+                    width: 25px;
+                    height: 25px;
+                }
+
+                &-text {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 1.4;
+                    font-weight: 300;
+                }
+            }
+
+            &__button {
+                background: linear-gradient(45deg, #443149, #6A4C7A);
+                border: none;
+                border-radius: 12px;
+                color: #fff;
+                font-size: clamp(14px, 1.5vw, 16px);
+                font-weight: 300;
+                padding: clamp(12px, 2vw, 15px);
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-top: 35px;
+
+                &:hover {
+                    background: linear-gradient(45deg, #6A4C7A, #88718D);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(106, 76, 122, 0.3);
+                }
+            }
+        }
+    }
+}
+
+.swiper {
+    &-container {
+        overflow: visible !important;
+    }
+
+    &-slide {
+        height: auto !important;
+        padding: 20px 0;
+    }
+}
+
+
+
+@media (max-width: 1400px) {
+    .app {
+        &-price {
+            .container {
+                width: 85%;
+            }
+
+            &-item {
+                &__description {
+                    font-size: 16px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .app {
+        &-price {
+            &-item {
+                padding: 40px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .app {
+        &-price {
+            .container {
+                width: 75%;
+            }
+
+            &-item {
+                padding: 30px 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .app {
+        &-price {
+
+            .container {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 876px) {
+    .app {
+        &-price {
+            .container {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .app {
+        &-price {
+            .container {
+                width: 75%;
+            }
+
+
+            &-item {
+                padding: 30px 25px;
+
+                &__header {
+                    &_info {
+                        &-title {
+                            font-size: 14px;
+                        }
+
+                        &-subtitle {
+                            font-size: 20px;
+                        }
+                    }
+
+                    &_icon {
+                        padding: 15px;
+
+                        img {
+                            width: 35px;
+                        }
+                    }
+                }
+
+                &__count {
+                    font-size: 24px;
+                }
+
+                &__include {
+                    margin-top: 30px;
+                }
+
+                &__feature {
+                    &_li {
+                        column-gap: 10px;
+
+                        &-text {
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+
+                        &-icon {
+                            width: 20px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .app {
+        &-price {
+            .container {
+                width: 100%;
+                padding: 0 15px;
+            }
+        }
+    }
+}
